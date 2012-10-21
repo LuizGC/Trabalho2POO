@@ -29,6 +29,9 @@ public class Interface {
 		return instance;
 	}
 
+	/**
+	 * Classe que constr—i a interface do usu‡rio.
+	 */
 	public void gerarMenu() {
 		String menu = "SISTEMA DE GERENCIAMENTO DE BILIOTECA\n"
 				+ "1 - Cadastrar um novo usuario\n"

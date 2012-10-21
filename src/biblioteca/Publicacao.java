@@ -7,6 +7,12 @@ public abstract class Publicacao {
 	private String editora;
 	private int ano;
 
+	/**
+	 * @param codPublicacao
+	 * @param titulo
+	 * @param editora
+	 * @param ano
+	 */
 	public Publicacao(int codPublicacao, String titulo, String editora, int ano) {
 		this.codPublicacao = codPublicacao;
 		this.titulo = titulo;
@@ -14,30 +20,51 @@ public abstract class Publicacao {
 		this.ano = ano;
 	}
 
+	/**
+	 * @return
+	 */
 	public String getTitulo() {
 		return titulo;
 	}
 
+	/**
+	 * @param titulo
+	 */
 	public void setTitulo(String titulo) {
 		this.titulo = titulo;
 	}
 
+	/**
+	 * @return
+	 */
 	public String getEditora() {
 		return editora;
 	}
 
+	/**
+	 * @param editora
+	 */
 	public void setEditora(String editora) {
 		this.editora = editora;
 	}
 
+	/**
+	 * @return
+	 */
 	public int getAno() {
 		return ano;
 	}
 
+	/**
+	 * @param ano
+	 */
 	public void setAno(int ano) {
 		this.ano = ano;
 	}
 
+	/**
+	 * @return
+	 */
 	public int getCodPublicacao() {
 		return codPublicacao;
 	}
