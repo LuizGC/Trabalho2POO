@@ -9,9 +9,8 @@ public class Usuario {
 	private String endereco;
 	private String fone;
 	private Calendar dataPenalizacao;
-	
-	public Usuario(String nome, String cpf, String endereco,
-			String fone) {
+
+	public Usuario(String nome, String cpf, String endereco, String fone) {
 		this.nome = nome;
 		this.cpf = cpf;
 		this.endereco = endereco;
@@ -62,18 +61,17 @@ public class Usuario {
 	@Override
 	public boolean equals(Object obj) {
 		Usuario usuario = (Usuario) obj;
-		if(usuario.cpf.equals(this.cpf))
+		if (usuario.cpf.equals(this.cpf))
 			return true;
 		else
 			return false;
-	
+
 	}
 
 	@Override
 	public String toString() {
-		return this.nome + " - " + this.cpf + " - " + this.endereco + " - " + this.fone;
+		return this.nome + " - " + this.cpf + " - " + this.endereco + " - "
+				+ this.fone;
 	}
-	
-	
-	
+
 }

@@ -6,9 +6,8 @@ public abstract class Publicacao {
 	private String titulo;
 	private String editora;
 	private int ano;
-	
-	public Publicacao(int codPublicacao, String titulo, String editora,
-			int ano) {
+
+	public Publicacao(int codPublicacao, String titulo, String editora, int ano) {
 		this.codPublicacao = codPublicacao;
 		this.titulo = titulo;
 		this.editora = editora;
@@ -46,20 +45,16 @@ public abstract class Publicacao {
 	@Override
 	public boolean equals(Object obj) {
 		Publicacao publicacao = (Publicacao) obj;
-		if(publicacao.codPublicacao == this.codPublicacao)
+		if (publicacao.codPublicacao == this.codPublicacao)
 			return true;
 		else
 			return false;
-	
+
 	}
 
 	@Override
 	public String toString() {
 		return codPublicacao + " - " + titulo + " - " + ano + " - " + editora;
 	}
-	
-	
-	
-	
-	
+
 }

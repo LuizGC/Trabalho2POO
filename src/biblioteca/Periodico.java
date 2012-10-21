@@ -1,13 +1,12 @@
 package biblioteca;
 
+public class Periodico extends Publicacao {
 
-public class Periodico extends Publicacao{
-	
 	private int numEdicao;
 	private int mes;
-	
-	public Periodico(int codPublicacao, String titulo, String editora,
-			int ano, int numEdicao, int mes) {
+
+	public Periodico(int codPublicacao, String titulo, String editora, int ano,
+			int numEdicao, int mes) {
 		super(codPublicacao, titulo, editora, ano);
 		this.numEdicao = numEdicao;
 		this.mes = mes;
